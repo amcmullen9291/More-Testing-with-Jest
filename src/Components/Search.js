@@ -19,6 +19,10 @@ const handleChange = (e) => {
       <br/>
         <Button/>
       </center>
+
+      <div>
+        <span>Search term: {inputValue}</span>
+      </div>
       </>
   )
 }
