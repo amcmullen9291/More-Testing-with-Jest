@@ -8,5 +8,10 @@
   background-color: salmon;
   color: lightslategrey;
   font-size: 29px;
+}
 
+#searchTerm{
+  margin-left: 5%;
+  border-left: 3px solid black;
+  padding-left: 1%;
 }
