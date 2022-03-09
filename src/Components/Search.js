@@ -14,7 +14,7 @@ const handleChange = (e) => {
       <>
       <center>      
         <div>Search</div>
-        <input type="text" onChange={(e) => {handleChange(e)}}  name="textField"/>
+        <input type="text" data-testid="textFieldTest" onChange={(e) => {handleChange(e)}}  name="textField" id="textField" placeholder='Enter Text'/>
       <hr/>
       <br/>
         <Button/>
@@ -24,6 +24,7 @@ const handleChange = (e) => {
         <span>Search term: </span><br/>
         <span>{inputValue}</span>
       </div>
+
       </>
   )
 }

@@ -6,7 +6,7 @@
 
 #button1:hover{
   background-color: salmon;
-  color: lightslategrey;
+  color: purple;
   font-size: 29px;
 }
 
@@ -14,4 +14,17 @@
   margin-left: 5%;
   border-left: 3px solid black;
   padding-left: 1%;
+}
+
+#button2{
+  position:absolute;
+  color: orange;
+  background-color: pink;
+  bottom:0;
+  margin-bottom: 5%;
+  width: 25%;
+  height: 7%;
+  font-size: 36px;
+  left: 0;
+  margin-left: 49%;
 }
