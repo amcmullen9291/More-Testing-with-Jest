@@ -20,7 +20,7 @@ test('check if button 2 exists', ()=> {
 test('renders second button onClick', async() => {
     await act(async () => {
         const { getAllByTestId } = render(<Button/>);
-        const buttonList = getAllByTestId('buttonTest') // drawback- all the button have the same test ID
+        const buttonList = getAllByTestId('buttonTest') // drawback- all the buttons have the same test ID
         await fireEvent.click(buttonList[0]);
         expect(getAllByTestId('buttonTest')).toHaveLength(2);
     })
