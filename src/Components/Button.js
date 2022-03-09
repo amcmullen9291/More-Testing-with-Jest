@@ -15,7 +15,7 @@ function Button() {
         <button id="button1" data-testid="buttonTest" onClick={changeButtonText}>{value}</button>
     </div>
     {showAnotherButton && (
-        <button id="button2" data-testid="button2Test">Continue</button>
+        <button id="button2" data-testid="buttonTest" title="button2" placeholder="Enter Here">Continue</button>
     )}
     </>
   )

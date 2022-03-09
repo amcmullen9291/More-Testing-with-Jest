@@ -1,5 +1,5 @@
 import Button from './Button';
-import { getByTestId, queryByTestId, render } from "@testing-library/react";
+import { render, act, fireEvent, getByTestId, queryByTitle, queryByPlaceholderText } from "@testing-library/react";
 
 
 test('check if button 1 exists', ()=> {
@@ -9,8 +9,18 @@ test('check if button 1 exists', ()=> {
 });
 
 test('check if button 2 exists', ()=> {
-    const { queryByTestId } = render(<Button />);
+    const { queryByTestId, queryByTitle } = render(<Button />);
     const button = queryByTestId('button2Test');
-    expect(button).toBeFalsy() // second button starts hidden
+    const buttonSecondCheck = queryByTitle('button2')
+    expect(button).toBeFalsy(); // second button starts hidden
+    expect(buttonSecondCheck).toBeFalsy() // added title attribute
+
 });
+
+test('renders second button onClick', async() => {
+    await act(async () => {
+        const { getAllByTestId } = render(<Button/>);
+        const buttonList = getAllByTestId('buttonTest')
+    })
+})
 
