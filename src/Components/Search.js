@@ -22,7 +22,7 @@ const handleChange = (e) => {
 
       <div id="searchTerm">
         <span>Search term: </span><br/>
-        <span>{inputValue}</span>
+        <span data-testid="registeredSearch">{inputValue}</span>
       </div>
 
       </>

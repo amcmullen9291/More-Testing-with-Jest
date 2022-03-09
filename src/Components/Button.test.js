@@ -11,5 +11,6 @@ test('check if button 1 exists', ()=> {
 test('check if button 2 exists', ()=> {
     const { queryByTestId } = render(<Button />);
     const button = queryByTestId('button2Test');
-    expect(button).toBeFalsy() // second button start invisible;
+    expect(button).toBeFalsy() // second button starts hidden
 });
+
